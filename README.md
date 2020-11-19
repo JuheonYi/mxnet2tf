@@ -1,3 +1,6 @@
+# Note
+
+To convert the [RetinaFace detector](https://github.com/deepinsight/insightface/tree/master/detection/RetinaFace), I added additional layer supports
 
 # MxNet to TensorFlow converter
 

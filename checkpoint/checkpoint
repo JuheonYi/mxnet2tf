@@ -1,0 +1,2 @@
+model_checkpoint_path: "mnet.25-1080x1920"
+all_model_checkpoint_paths: "mnet.25-1080x1920"
