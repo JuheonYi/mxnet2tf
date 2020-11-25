@@ -4,20 +4,13 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-import cv2
-import scipy.io
 import numpy as np
-import matplotlib.pyplot as plt
-import cv2
 import pickle
 
-import pylab as pl
 import time
 import os
 import sys
-from scipy.special import expit
 import glob
-import imageio
 
 def freeze_graph(model_dir = "checkpoint/", model_name='mnet.25', input_node_names='input', output_node_names='output', out_name = "converted_model.tflite", quantize = False):
     """Extract the sub graph defined by the output nodes and convert

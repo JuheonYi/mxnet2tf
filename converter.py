@@ -308,10 +308,11 @@ class Converter(object):
             repeated_tesnor = tf.reshape(tiled_tensor, tf.shape(tensor) * repeats, name = name)
             '''
 
+            #'''
             # this is the revised version that does not require expanding tensor to 5-dim
             tiled_tensor = tf.tile(tensor, multiples = [1]+repeats[0:3])
             repeated_tesnor = tf.reshape(tiled_tensor, tf.shape(tensor) * repeats, name = name)
-
+            #'''
             return repeated_tesnor
         
         self.tf_nodes[node_name] = tf_repeat(input_sym, [1, scale, scale, 1], name=node_name)
